@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Math</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body >
+
+    <br>
+
+    <a href="welcome.html">home</a>
+
+    <div class="container">
+      <h1>Welcome to my Project</h1>
+
+        <p id="quiz">You will have Questions here</p><br>
+        <p id="ans">you will see your answer here</p>
+
+      <input type="text1" value="your answer" id="p1">
+           
+      <br><br>
+
+      <button class="myButton" onclick="Submit()">submit your Answer</button>
+      <br><br>
+
+      <div class="dice">
+     
+        <img id="img1" src="/images/dice6.png">
+      </div>
+     
+
+      <div class="dice">
+     
+        <img id="img2" src="/images/dice6.png">
+      </div>
+
+    </div>
+
+    <div class="container1">
+      <button id="myButton1" class="myButton" onclick="start()">Click to Start</button>
+    </div>
+
+    <script >
+
+        let randomNumber1;
+        let randomNumber2;
+        let randomImageSource1;
+        let randomImageSource2;
+        let answer;
+
+        let score = 0 ;
+
+        function start(){
+         randomNumber1 = Math.floor(Math.random() * 6) + 1;
+         randomImageSource1 = "/images/dice"+randomNumber1+".png";
+        randomNumber2 = Math.floor(Math.random() * 6) + 1;
+         randomImageSource2 = "/images/dice"+randomNumber2+".png";
+
+
+        document.getElementById("img1").src = randomImageSource1;
+        document.getElementById("img2").src = randomImageSource2;
+
+        let s = randomNumber1 +" + "+randomNumber2+ " = ?";
+        document.getElementById("quiz").innerHTML = s;
+        document.getElementById("myButton1").innerHTML = "Click to check"
+         score = 0;
+         document.getElementById("ans").innerHTML ="your score is :"+ score;
+
+        
+        }
+       
+        function Submit(){
+
+        answer = document.getElementById("p1").value;
+        
+        
+        if(randomNumber1 + randomNumber2 == answer)
+        {
+            score++;
+            document.querySelector("h1").innerHTML = "CORRECT!";
+        }
+        else
+        {
+          document.querySelector("h1").innerHTML = "WRONG!";
+
+        }
+
+        document.getElementById("ans").innerHTML ="your score is : "+ score;
+
+        randomNumber1 = Math.floor(Math.random() * 6) + 1;
+        randomImageSource1 = "/images/dice"+randomNumber1+".png";
+        randomNumber2 = Math.floor(Math.random() * 6) + 1;
+         randomImageSource2 = "/images/dice"+randomNumber2+".png";
+
+        document.getElementById("img1").src = randomImageSource1;
+        document.getElementById("img2").src = randomImageSource2;
+
+        let s = randomNumber1 +" + "+randomNumber2+ " = ?";
+        document.getElementById("quiz").innerHTML = s;
+
+        
+        }
+
+    </script>
+
+      </body>
+
+      <footer>
+        Made by 🎲 Radwan Mansur and Karam Badran 🎲 
+      </footer>
+    </html>

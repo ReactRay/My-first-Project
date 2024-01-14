@@ -1,0 +1,148 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+  
+
+}
+
+body {
+  background-color: #393E46;
+}
+
+h1 {
+  margin: 20px;
+  font-family:  cursive;
+  font-size: 40px;
+  color: #4ECCA3;
+}
+
+p {
+  font-size: 25px;
+  color: #4ECCA3;
+  font-family:  cursive;
+}
+
+img {
+  width: 65%;
+}
+
+footer {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+.container1 {
+
+  margin: 10px auto;
+  width: 200px;
+}
+
+#myButton ,#myButton2 {
+	background-color:#4ECCA3;
+	border-radius:20px;
+	border:1px solid #3a9544;
+	color:#ffffff;
+	font-family:cursive;
+	font-size:20px;
+	padding:15px;
+  margin: 5px auto;
+
+}
+
+.myButton{
+  
+    background-color:#4ECCA3;
+    border-radius:20px;
+    border:1px solid #3a9544;
+    color:#ffffff;
+    font-family:cursive;
+    font-size:20px;
+    padding:15px;
+    margin: 5px auto;
+  
+  
+}
+.myButton:hover{
+	background-color:#80c65d;
+
+}
+#myButton:hover ,#myButton2:hover {
+	background-color:#80c65d;
+}
+
+#p1,#p2 {
+  padding: 7px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #ffffff;
+  background-color:#4ECCA3;
+  color: #ffffff;
+  border-style: solid;
+  border-radius: 10px;
+  font-family:cursive;
+  margin: 0 10px;
+
+}
+
+a{
+  background-color:#4ECCA3;
+	border-radius:20px;
+	border:1px solid #3a9544;
+	color:#ffffff;
+	font-family:cursive;
+	font-size:20px;
+	padding:10px;
+  text-decoration: none;
+  margin:30px 20px;
+
+}
+a:hover{
+  background-color:#80c65d;
+}
+
+.bar{
+  width: 50px;
+  height: 300px;
+  background-color: rgb(218, 199, 199);
+  position: absolute;
+  top: 300px;
+  left: 400px;
+}
+
+#b1,#b2,#b3,#b4,#b5{
+  width: 35px;
+  height: 55px;
+  background-color: #80c65d;
+  margin: 4px auto;
+
+
+}
+
+.bar2{
+  width: 50px;
+  height: 300px;
+  background-color: rgb(218, 199, 199);
+  position: absolute;
+  right: 400px;
+  top: 300px
+
+}
+
+#c1,#c2,#c3,#c4,#c5{
+  width: 35px;
+  height: 55px;
+  background-color: #80c65d;
+  margin: 4px auto;
+
+}
